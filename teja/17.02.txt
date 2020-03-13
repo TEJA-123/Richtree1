@@ -1,0 +1,16 @@
+audio code--
+<audio scr="" id=my_audio" loop"loop"></audio>
+<script type="text/javascript>
+window.onload=function(){
+	document.getElementById("my_audio").play();
+	}
+</script>
+
+903,912,921(row)
+ <p style="color:red;">
+	<b> ---------</b>
+  </p> 
+
+css- 
+
+ 2944(row)-- background: rgb(204,255,204);

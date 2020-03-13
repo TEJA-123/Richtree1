@@ -1,0 +1,28 @@
+* { margin:0;padding:0;}
+html,body{
+    background: #4e9bfa;
+}
+.container{
+    width:250px;
+    height:350px;
+    background:#2e517d;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    perspective: 1000px;
+}
+.cover{
+    width:210px;
+    height: 100px;
+    position: absolute;
+    left:40px;
+    background-color: #2e517d;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transform-origin:left ;
+    transition: all .5s ease-in;
+}
+.container:hover.cover{
+    transform:rotateY(-180deg);
+}

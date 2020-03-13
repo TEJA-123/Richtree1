@@ -1,0 +1,58 @@
+
+  	@font-face{
+  		font-family: moonhouse;
+  		src: url(Moonhouse-yE5M.ttf);
+  	}
+  	*{
+  		margin: 0;
+  		padding: 0px;
+  	}
+  	.pp .start{
+     	font-family: moonhouse;
+     	font-size: 27px;
+
+
+     }
+     .pp .ng{
+     	font-family: moonhouse;
+     	font-size: 27px;
+     	color:#dd1b16;
+    }
+    .sidebar{ 
+    	padding: 0px;
+    	margin-left: 0px;
+    	width:260px; 
+    	 background-color:#000;
+    	 transition: all 0.5s  ease-in-out;
+    	 }
+    .bg-default{
+    	  	background-color: #222;
+    	  }
+    .sidebar ul{
+    	list-style: none;
+    	margin-left: 0px;
+    	padding: 0px;
+    }
+
+    .sidebar li a,.sidebar li a.collapsed.active{ 
+    	display:block; 
+    	padding:8px 12px;
+    	 color:#fff;
+    	 border-left:0px solid #dedede; 
+    	  text-decoration:none
+    	}
+    	li.active.a{
+    		background-color: #dd1b16;
+    	}
+    	.sidebar a:hover{
+    		background-color: #a9a9a9;
+    	}
+    	.sidebar a:focus{
+    		background-color: #dd1b16;
+    	}
+    	.sidebar i{
+    		margin-right: 10px;
+    	}
+
+
+    	

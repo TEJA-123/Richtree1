@@ -1,0 +1,115 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar{
+      background-color:black;
+      height:50px;
+    }
+.wrapper{
+  display: grid;
+grid-template-rows: 100%; 
+  grid-template-columns: 20% 80%;
+
+  grid-gap: 1em;
+
+  grid-auto-rows: minmax(100px,auto);
+}
+
+.wrapper div{
+  background-color:#eee;
+
+}
+.wrapper div::nth-child(odd){
+  background-color:#ddd;
+}
+.nested{
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows: 20% 80%;
+  grid-auto-columns:minmax(100px,auto);
+  grid-gap: 1em;
+}
+.nested div{
+  background-color:#bbb;
+}
+.nested div:nth-child(odd){
+  background-color: #ddd;
+}
+.navbar-collapse{
+  background: navajowhite;
+}
+ .jumbotron{
+  height:100%;
+  weight:100%;
+} 
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Richtree</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+  </div>
+  <div class="spinner-border text-danger"></div>
+</nav>
+<div class="wrapper">
+  <div>
+      <div class="card-img-fluid" style="width:400px">
+          <img class="card-img-top" src="C:\Users\RICHTREE\Desktop\task1\teja.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title"><i>Atmakuri Teja</i></h4>
+            <p class="card-text" style="text-align:centre;"><i>Among all kinds of killers time is the ultimate<br> Because <br>Time Killes <b>EVERYTHING</b></i></p>
+            <button><a href="http://richtree.in/" class="btn btn-sucess btn-xs">See Profile</a></button>
+          </div>
+        </div> </div>
+  <div class="nested">
+   
+      <div class="jumbotron">
+          <h2>RchTree</h2>
+          <button class="btn btn-sucess btn-xs" type="button">Rich</button>
+          <button class="btn btn-danger btn-xs" type="button">tree</button>
+
+      </div>
+    <div class="jumbotron">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+</div>
+
+</div>
+
+
+</body>
+</html>

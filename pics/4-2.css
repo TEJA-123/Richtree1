@@ -1,0 +1,29 @@
+body{
+
+}
+span{
+    font-size: 15px;
+}
+a{
+    text-decoration:none;
+    color: rgba(red, green, blue,0.7);
+    border-bottom:2px solid silver;
+}
+.box{
+    padding:60px 0px;
+}
+.box-part{
+    background:;
+    border-radius: ;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text-part{
+    margin:20px 0px;
+}
+.image{
+    padding:10% 10%;
+    margin:10% 10%;
+    display:flex;
+    border-radius: 100px;
+}

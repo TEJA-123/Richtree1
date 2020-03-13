@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timer count down</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div><span>Days</span><span id="time1"></span></div>
+        <div><span>Hours</span><span id="time2"></span></div>
+    
+        <div><span>Minutes</span><span id="time3"></span></div>
+        <div><span>Seconds</span><span id="time4"></span></div>
+    </div>
+
+    <div id="demo">
+
+    </div>
+    <script>
+       var countDownDate = new Date("FEB 14, 2020 20:00:00").getTime();
+       var x= setInterval(function(){
+            
+        
+        var now =new Date().getTime();
+        var timeleft = countDownDate - now;
+        var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+        
+        if(hours<"10"){
+            hours ="0"+hours;
+        }
+        if(minutes<"10"){
+            minutes = "0"+minutes;
+            
+        }
+        if(seconds<"10")
+        {
+            seconds = "0" + seconds;
+        }
+        
+        document.getElementById("time1").innerHTML=days;
+        document.getElementById('time2').innerHTML=hours;
+        document.getElementById("time3").innerHTML=minutes;
+        document.getElementById('time4').innerHTML=seconds;
+        if(timeleft<0){
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "Expied";
+        }
+
+        },1000)
+        
+        </script>
+    
+</body>
+</html>

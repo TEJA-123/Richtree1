@@ -1,0 +1,52 @@
+body,html{
+    margin:0;
+    padding: 0;
+    height:100%;
+    font-family: sans-serif;
+}
+.img-container img{
+    width:50%;
+    height:100vh;
+    overflow:hidden;
+    float: left;
+  
+}
+.link-container link{
+    width:50%;
+    height: 100%;
+    overflow:hidden;
+    float:right;
+}
+.login{
+    position:fixed;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    right:0;
+    margin: 0;
+    background:;
+    height: 100%;
+    z-index:1;
+   
+}
+.login form{
+    text-align:center;
+    margin:160px,30px;
+    float:left;
+}
+.login h2{
+    font-size: 30px;
+    color:#f44336;
+
+}
+.login label{
+    display:;
+    font-size:18px;
+    font-weight: 70;
+    margin: 8px 0;
+}
+.txtb{
+    width:100%;
+    padding:8px 0;
+    font-size: 18px;;
+}

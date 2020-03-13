@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SlideShow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    .slideshow{
+        width:200px;
+        height: 300px;
+        perspective: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .content{
+        width:200px;
+        height: 300px;
+        animation:animate 20s infinite linear;
+        transform-style:preserve-3d;
+    }
+    .content:hover{
+     animation-play-state:paused;
+     cursor: pointer;
+    }
+    figure{
+        width: 200px;
+        height: 300px;
+        overflow:hidden;
+        box-shadow: 0 0 20px;
+        position: absolute;
+        border-radius: 5px;
+    }
+    figure:nth-child(1){
+        transform: rotateY(0deg) translateZ(300px);
+    }
+    figure:nth-child(2){
+        transform: rotateY(45deg) translateZ(300px);
+    }
+    figure:nth-child(3){
+        transform: rotateY(90deg) translateZ(300px);
+    }
+    figure:nth-child(4){
+        transform: rotateY(135deg) translateZ(300px);
+    }
+    figure:nth-child(5){
+        transform: rotateY(180deg) translateZ(300px);
+    }
+    figure:nth-child(6){
+        transform: rotateY(225deg) translateZ(300px);
+    }
+    figure:nth-child(7){
+        transform: rotateY(270deg) translateZ(300px);
+    }
+    figure:nth-child(8){
+        transform: rotateY(315deg) translateZ(300px);
+    }
+        /* figure:nth-child(9){
+        transform: rotateY(360deg) translateZ(300px);
+    } */
+    @Keyframes animate{
+        from { transform: rotateY(0deg);}
+        to { transform: rotateY(360deg);}
+
+    }
+</style>
+</head>
+<body>
+    <div class="slideshow">
+        <div class="content">
+        <figure><img src="1.jpg"></figure>
+        <figure><img src="2.jpg"></figure>
+        <figure><img src="3.jpg"></figure>
+        <figure><img src="4.jpg"></figure>
+        <figure><img src="5.jpg"></figure>
+        <figure><img src="6.jpg"></figure>
+        <figure><img src="7.jpg"></figure>
+        <figure><img src="8.jpg"></figure>
+        </div>
+    </div>
+<script>
+var myIndex = 0;
+car();
+
+function car() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(car, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

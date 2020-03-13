@@ -1,0 +1,11 @@
+.image-container{
+    background: url('C:/Users/RICHTREE/Desktop/New folder/pic.jpg') center no-repeat;
+    width: 100vh;
+    height:100vh;
+    background-size:cover;
+}
+.teja{
+    background-color: black;
+    display:flex;
+    justify-content:center ;
+}

@@ -1,0 +1,88 @@
+<html>
+    <head>
+      <title>slideshow</title>
+      <link rel="stylesheet" type="text/css" href="s1.css">
+    </head>
+        <body>
+            <div class="slide-show">
+                <div class="myslides ">
+                    <div class="number">
+                        <p>1/7</p>
+                    </div>
+                      <img src="C:\Users\RICHTREE\Desktop\task1\1st january.jpg" id="slider" >
+                </div>
+                <div class="myslides animated rollIn">
+                        <div class="number ">
+                            <p>2/7</p>
+                        </div>
+                          <img src="C:\Users\RICHTREE\Desktop\task1\2nd january.jpg" id="slider">
+                    </div>
+                    <div class="myslides animated roatteIn">
+                            <div class="number">
+                                <p>3/7</p>
+                            </div>
+                              <img src="C:\Users\RICHTREE\Desktop\task1\3rd january.jpg" id="slider" >
+                        </div>
+                        <div class="myslides animated fadeInUpBig">
+                                <div class="number">
+                                    <p>4/7</p>
+                                </div>
+                                  <img src="C:\Users\RICHTREE\Desktop\task1\4th january.jpg" id="slider">
+                            </div>
+                            <div class="myslides animated flipInX">
+                                <div class="number">
+                                    <p>5/7</p>
+                                </div>
+                                  <img src="C:\Users\RICHTREE\Desktop\task1\5th january.jpg" id="slider">
+                            </div>
+                            <div class="myslides animated flipInY">
+                                <div class="number">
+                                    <p>6/7</p>
+                                </div>
+                                  <img src="C:\Users\RICHTREE\Desktop\task1\6th january.jpg" id="slider">
+                            </div>
+                            <div class="myslides">
+                                <div class="number animated fadeInUp">
+                                    <p>7/7</p>
+                                </div>
+                                  <img src="C:\Users\RICHTREE\Desktop\task1\7th january.jpg" id="slider">
+                            </div>
+                 <a class="prev" onclick="pushslides(-1)">&#10094</a>
+                <a class="next" onclick="pushslides(1)">&#10095</a>
+     </div>
+            <div class ="dotsym">
+                <span class="dot" onclinck="currentslide(1)"></span>
+                <span class="dot" onclinck="currentslide(2)"></span>
+                <span class="dot" onclinck="currentslide(3)"></span>
+                <span class="dot" onclinck="currentslide(4)"></span>
+                
+              </div>
+              <script>
+                  var sliderIndex=1;
+                         showslides(sliderIndex);
+                         function pushslides(n) { showslides(sliderIndex +=n); }  
+                         function currentslides(n) { showslides(sliderIndex =n); }   
+                         function showslides(n)
+                          {
+                              var i;
+                              var slides=document.getElementsByClassName("myslides");
+                              var dots=document.getElementsByClassName("dot");
+                              if(n > slides.length){  
+                                    sliderIndex=1
+                                     }
+                              if(n < 1){  
+                                     sliderIndex=slides.length;
+                                     }
+                               for(i = 0 ;i<slides.length;i++){
+                                         slides[i].style.display="none";
+                                       }
+                                       for(i=0 ;i<dots.length;i++){
+                                         dots[i].className=dots[i].className.replace("active","");
+                                       }
+                                     slides[sliderIndex - 1].style.display="block";
+                                     dots[sliderIndex -1].className +="active";
+             
+                          }
+             </script>
+    </body>
+</html>

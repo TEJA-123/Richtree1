@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            .t{grid-area:header;}
+             .e{grid-area:menu;}
+             .j{grid-area:right;}
+              .a{grid-area:left;}
+              .s{grid-area:footer;}
+              .grid-container {
+                display: grid;
+                grid-template-areas:'header header header header header header'
+                                        'menu main main main right right'
+                                        'menu footer footer footer footer footer';
+                grid-gap: 10px;
+                background-color: #2196F3;
+                padding: 10px;
+                }
+              .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+                }
+ </style>
+    </head>
+    <body><div class="grid-container">
+        <div class="t">head</div>
+        <div class="e">menu</div>
+        
+        <div class="j">right</div>
+      
+        <div class="s">footer</div>
+    </div>
+    </body>
+</html>

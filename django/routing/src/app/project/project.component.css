@@ -1,0 +1,83 @@
+
+  .profile{
+    margin: 20px 0;
+    }
+    .profile-sidebar{
+    padding: 0px 0 10px 0;
+    background: #fff;
+    box-sizing: border-box;
+    }
+    .profile-userpic img{
+          float: none;
+          margin: 0 auto;
+          width: 100%;
+          height: 100%;
+    }
+    .profile-usertitle-name{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    }
+      .profile-usertitle-job {
+       text-align: center;
+         color: #00bbd3;
+         font-size: 18px;
+         font-weight: 600;
+         margin-bottom: 10px;
+       }
+       .profile-about{
+        margin-left: 23px;
+        color: #6c757d;
+        font-weight: 600;
+       }
+       .p1{
+        margin-left: 23px;
+        font-size: 15px;
+       }
+     
+         .btn-info {
+          float: right;
+          position: relative;
+            font-family: Raleway-SemiBold;
+            font-size: 13px;
+           color: rgba(91, 192, 222, 0.75);
+          letter-spacing: 1px;
+         line-height: 15px;
+         border: 2px solid rgba(91, 192, 222, 0.75);
+         border-radius: 40px;
+         background: transparent;
+         transition: all 0.3s ease 0s;
+         margin-right: 10px;
+                 }
+  
+            .btn-info:hover {
+                         color: #FFF;
+                         background: rgba(91, 192, 222, 0.75);
+                         border: 2px solid rgba(91, 192, 222, 0.75);
+                         }
+          .profile-content{      
+    background: #fff;
+   
+          }
+          .container{
+              padding-top:100px;
+          }
+          .bg-info{
+          padding: 10px;
+          text-align: center;
+          height: 50px;
+          margin-bottom: .5rem;
+              font-weight: 500;
+              font-size: 23px;
+             line-height: 1.2;
+          }
+         hr.style1{
+     border: 0.5px solid grey;
+     margin-right: 20px;
+     margin-left: 20px;
+           }
+           .container{
+  padding-right:1px;
+  }
